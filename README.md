@@ -32,11 +32,10 @@ lui permettant d’avancer ou d’aider ses alliés à s’améliorer!
 **__Image du personnage New World & monde réel requis):__**
 
 **__Description:__** June est une jeune femme de 19 ans, aux cheveux courts et aux yeux perçants. Elle porte un
-kimono noir avec des motifs rouges, symbolisant son appartenance à la guilde des artisans. Son kimono est
-décoré de motifs complexes, reflétant son expertise en création d'objets uniques. Elle porte des gants en cuir
-noir pour protéger ses mains lors de la manipulation de matériaux précieux. Son kimono est légèrement usé, mais
-son entretien est impeccable, montrant son engagement envers son métier. Elle porte une ceinture en cuir noir
-avec une petite bourse en soie rouge, contenant des outils de base pour la création d'objets. Son kimono est
+kimono bleu, symbolisant son appartenance à la guilde des artisans. Son kimono est simple et uni mais dans un textile très rare, 
+reflétant son expertise en création d'objets uniques. Elle porte des gants en cuir noir pour protéger ses mains lors de la manipulation 
+de matériaux précieux. Son kimono est légèrement usé, mais son entretien est impeccable, montrant son engagement envers son métier. 
+Elle porte une ceinture en cuir noir avec une petite bourse en soie rouge, contenant des outils de base pour la création d'objets. Son kimono est
 complété par des chaussures en cuir noir, conçues pour la marche et le combat. June a une expression sérieuse,
 mais ses yeux brillent d'une lueur de détermination. Elle est toujours prête à aider ses alliés et à créer des
 objets uniques pour les améliorer.

@@ -1,10 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightOfKarma - Bofuri RP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">Night<span>OfKarma</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="active">Accueil</a></li>
+                        <li><a href="#character">Personnage</a></li>
+                        <li><a href="#world">Monde</a></li>
+                        <li><a href="#stats">Statistiques</a></li>
+                        <li><a href="#gallery">Galerie</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>June Zan</h1>
+            <p>Artisane de talent dans le monde de Bofuri, connue sous le nom de NightOfKarma</p>
+            <div class="hero-buttons">
+                <a href="#character" class="btn">Découvrir le personnage</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Section -->
+    <section class="character-section" id="character">
+        <div class="container">
+            <h2 class="section-title fade-in">Le Personnage</h2>
+            
+            <div class="world-toggle">
+                <button id="real-world-btn" class="world-btn active" onclick="toggleWorld('real')">Monde Réel</button>
+                <button id="new-world-btn" class="world-btn" onclick="toggleWorld('new')">New World</button>
+            </div>
+            
+            <!-- Real World Character -->
+            <div id="real-world" class="character-card fade-in active">
+                <div class="character-image" style="background-image: url('images/june-real.jpg');">
+                    <!-- Image placeholder - à remplacer par l'image réelle du personnage -->
+                </div>
+                <div class="character-info">
+                    <h3 class="character-name">June Zan</h3>
+                    <p class="character-title">Jeune femme de 19 ans</p>
+                    
+                    <div class="character-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Nom :</span>
+                            <span class="detail-value">Zan</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Prénom :</span>
+                            <span class="detail-value">June</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Âge :</span>
+                            <span class="detail-value">19 ans</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Sexe :</span>
+                            <span class="detail-value">Fille</span>
+                        </div>
+                    </div>
+                    
+                    <div class="character-description">
+                        <h4>Caractère</h4>
+                        <p>Calculatrice et gentille, June analyse toujours la situation avant d'agir. 
+                        Elle est réfléchie, stratège, mais n'hésite pas à tendre la main à ceux qui en ont besoin. Sa curiosité et sa 
+                        débrouillardise l'ont menée plus loin qu'elle ne l'aurait imaginé.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New World Character -->
+            <div id="new-world" class="character-card fade-in">
+                <div class="character-image" style="background-image: url('images/june-newworld.jpg');">
+                    <!-- Image placeholder - à remplacer par l'image du personnage dans New World -->
+                </div>
+                <div class="character-info">
+                    <h3 class="character-name">NightOfKarma</h3>
+                    <p class="character-title">Artisan - Spécialiste en création d'items</p>
+                    
+                    <div class="character-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Arme de départ :</span>
+                            <span class="detail-value">Artisanat (+8 Str, +24 Dex, +5 Int, 28 HP, 15 MP)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Classe :</span>
+                            <span class="detail-value">Artisan (spé création d'item)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="character-description">
+                        <h4>Description</h4>
+                        <p>June est une jeune femme de 19 ans, aux cheveux courts et aux yeux perçants. Elle porte un
+                        kimono bleu, symbolisant son appartenance à la guilde des artisans. Son kimono est simple et uni mais dans un textile très rare, 
+                        reflétant son expertise en création d'objets uniques. Elle porte des gants en cuir noir pour protéger ses mains lors de la manipulation 
+                        de matériaux précieux. Son kimono est légèrement usé, mais son entretien est impeccable, montrant son engagement envers son métier. 
+                        Elle porte une ceinture en cuir noir avec une petite bourse en soie rouge, contenant des outils de base pour la création d'objets. Son kimono est
+                        complété par des chaussures en cuir noir, conçues pour la marche et le combat. June a une expression sérieuse,
+                        mais ses yeux brillent d'une lueur de détermination. Elle est toujours prête à aider ses alliés et à créer des
+                        objets uniques pour les améliorer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <h2 class="section-title fade-in">Statistiques</h2>
+            
+            <div class="stats-container fade-in">
+                <div class="stats-card">
+                    <h3>Caractéristiques</h3>
+                    
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-name">PV (Points de Vie)</span>
+                            <span class="stat-value">À définir</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" data-value="0"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-name">MP (Points de Magie)</span>
+                            <span class="stat-value">À définir</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" data-value="0"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-name">STR (Force)</span>
+                            <span class="stat-value">À définir</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" data-value="0"></div>
+                        </div>
+                        <div class="stat-description">Permet de porter des objets lourds & infliger de gros dégâts</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-name">AGI (Agilité)</span>
+                            <span class="stat-value">À définir</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" data-value="0"></div>
+                        </div>
+                        <div class="stat-description">Vitesse d'attaque & de déplacement</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-name">INT (Intelligence)</span>
+                            <span class="stat-value">À définir</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" data-value="0"></div>
+                        </div>
+                        <div class="stat-description">Puissance magique & dégâts des skills</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-name">VIT (Vitalité)</span>
+                            <span class="stat-value">À définir</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" data-value="0"></div>
+                        </div>
+                        <div class="stat-description">Défense physique & magique</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-name">DEX (Dextérité)</span>
+                            <span class="stat-value">À définir</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" data-value="0"></div>
+                        </div>
+                        <div class="stat-description">Chance, facteur de coup critique</div>
+                    </div>
+                    
+                    <div class="stat-note">
+                        <p>100 points à répartir entre les statistiques</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- World Info Section -->
+    <section class="world-info" id="world">
+        <div class="container">
+            <h2 class="section-title fade-in">Le Monde de Bofuri</h2>
+            
+            <div class="world-content">
+                <div class="info-card fade-in">
+                    <h3>Artisanat dans New World</h3>
+                    <p>En tant qu'Artisan spécialisé dans la création d'objets, June peut fabriquer des items uniques qui aident ses alliés à progresser. Sa maîtrise de l'artisanat lui permet de transformer des matériaux rares en équipements puissants.</p>
+                    <p>Les artisans sont essentiels dans New World, car ils peuvent créer des objets introuvables dans les boutiques ordinaires ou en tant que butin de monstres.</p>
+                </div>
+                
+                <div class="info-card fade-in">
+                    <h3>La Guilde des Artisans</h3>
+                    <p>Reconnaissable à son kimono bleu, June fait partie de la prestigieuse Guilde des Artisans. Cette organisation regroupe les meilleurs créateurs d'objets du jeu et offre des avantages exclusifs à ses membres.</p>
+                    <p>La guilde dispose d'ateliers spéciaux et d'accès à des recettes rares qui permettent de créer des objets légendaires.</p>
+                </div>
+                
+                <div class="info-card fade-in">
+                    <h3>Les Défis de New World</h3>
+                    <p>Dans ce VRMMORPG, les joueurs doivent affronter de nombreux défis, des donjons aux boss de raid. Grâce à ses compétences d'analyse et sa capacité à créer des objets adaptés à chaque situation, June est une alliée précieuse.</p>
+                    <p>Sa stratégie consiste à observer, analyser, puis créer l'outil parfait pour surmonter l'obstacle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in">Galerie</h2>
+            
+            <div class="gallery-container fade-in">
+                <p class="gallery-placeholder">Galerie d'images à venir...</p>
+                <!-- Les images seront ajoutées ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>NightOfKarma - Personnage RP Bofuri</p>
+                <div class="footer-links">
+                    <a href="#home">Accueil</a>
+                    <a href="#character">Personnage</a>
+                    <a href="#world">Monde</a>
+                    <a href="#stats">Statistiques</a>
+                </div>
+                <p class="copyright">&copy; 2025 Bofuri RP - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Skill Modal -->
+    <div id="skill-modal" class="modal">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
