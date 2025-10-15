@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnage - NightOfKarma | Bofuri RP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">Night<span>OfKarma</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="personnage.html" class="active">Personnage</a></li>
+                        <li><a href="monde.html">Monde</a></li>
+                        <li><a href="statistiques.html">Statistiques</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Le Personnage</h1>
+            <p>Découvrez June Zan et son alter-ego NightOfKarma</p>
+        </div>
+    </section>
+
+    <!-- Character Section -->
+    <section class="character-section" id="character">
+        <div class="container">
+            <div class="world-toggle">
+                <button id="real-world-btn" class="world-btn active" onclick="toggleWorld('real')">Monde Réel</button>
+                <button id="new-world-btn" class="world-btn" onclick="toggleWorld('new')">New World</button>
+            </div>
+            
+            <!-- Real World Character -->
+            <div id="real-world" class="character-card fade-in active">
+                <div class="character-image" style="background-image: url('images/june-real.jpg');">
+                    <!-- Image placeholder - à remplacer par l'image réelle du personnage -->
+                </div>
+                <div class="character-info">
+                    <h3 class="character-name">June Zan</h3>
+                    <p class="character-title">Jeune femme de 19 ans</p>
+                    
+                    <div class="character-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Nom :</span>
+                            <span class="detail-value">Zan</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Prénom :</span>
+                            <span class="detail-value">June</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Âge :</span>
+                            <span class="detail-value">19 ans</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Sexe :</span>
+                            <span class="detail-value">Fille</span>
+                        </div>
+                    </div>
+                    
+                    <div class="character-description">
+                        <h4>Caractère</h4>
+                        <p>Calculatrice et gentille, June analyse toujours la situation avant d'agir. 
+                        Elle est réfléchie, stratège, mais n'hésite pas à tendre la main à ceux qui en ont besoin. Sa curiosité et sa 
+                        débrouillardise l'ont menée plus loin qu'elle ne l'aurait imaginé.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New World Character -->
+            <div id="new-world" class="character-card fade-in">
+                <div class="character-image" style="background-image: url('images/june-newworld.jpg');">
+                    <!-- Image placeholder - à remplacer par l'image du personnage dans New World -->
+                </div>
+                <div class="character-info">
+                    <h3 class="character-name">NightOfKarma</h3>
+                    <p class="character-title">Artisan - Spécialiste en création d'items</p>
+                    
+                    <div class="character-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Arme de départ :</span>
+                            <span class="detail-value">Artisanat (+8 Str, +24 Dex, +5 Int, 28 HP, 15 MP)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Classe :</span>
+                            <span class="detail-value">Artisan (spé création d'item)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="character-description">
+                        <h4>Description</h4>
+                        <p>June est une jeune femme de 19 ans, aux cheveux courts et aux yeux perçants. Elle porte un
+                        kimono bleu, symbolisant son appartenance à la guilde des artisans. Son kimono est simple et uni mais dans un textile très rare, 
+                        reflétant son expertise en création d'objets uniques. Elle porte des gants en cuir noir pour protéger ses mains lors de la manipulation 
+                        de matériaux précieux. Son kimono est légèrement usé, mais son entretien est impeccable, montrant son engagement envers son métier. 
+                        Elle porte une ceinture en cuir noir avec une petite bourse en soie rouge, contenant des outils de base pour la création d'objets. Son kimono est
+                        complété par des chaussures en cuir noir, conçues pour la marche et le combat. June a une expression sérieuse,
+                        mais ses yeux brillent d'une lueur de détermination. Elle est toujours prête à aider ses alliés et à créer des
+                        objets uniques pour les améliorer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Story -->
+    <section class="character-story">
+        <div class="container">
+            <h2 class="section-title fade-in">Histoire de June</h2>
+            
+            <div class="story-content fade-in">
+                <div class="story-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Avant New World</h3>
+                            <p>June a toujours été fascinée par la création et l'artisanat. Dès son plus jeune âge, elle passait des heures à fabriquer des objets avec ce qu'elle trouvait. Cette passion l'a naturellement conduite vers les jeux vidéo où elle pouvait exprimer sa créativité sans limites.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Découverte de New World</h3>
+                            <p>Quand New World a été lancé, June n'a pas hésité une seconde. Elle y a vu l'opportunité parfaite de combiner sa passion pour l'artisanat avec son amour des jeux vidéo. Elle s'est inscrite dès le premier jour sous le pseudonyme de NightOfKarma.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Évolution dans le jeu</h3>
+                            <p>Contrairement à la plupart des joueurs qui se sont précipités vers les classes de combat, June a immédiatement choisi la voie de l'artisan. Sa capacité d'analyse et sa patience lui ont permis de découvrir des recettes rares et de créer des objets uniques que personne d'autre ne pouvait fabriquer.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Aujourd'hui</h3>
+                            <p>June est désormais reconnue comme l'une des meilleures artisanes de New World. Son kimono bleu est devenu un symbole de qualité et d'innovation. Les joueurs viennent de loin pour lui demander de créer des objets spécifiques, et elle ne refuse jamais un défi qui lui permet de repousser les limites de ses compétences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Relationships -->
+    <section class="character-relationships">
+        <div class="container">
+            <h2 class="section-title fade-in">Relations</h2>
+            
+            <div class="relationships-grid fade-in">
+                <div class="relationship-card">
+                    <div class="relationship-image" style="background-image: url('images/ally1.jpg');"></div>
+                    <div class="relationship-info">
+                        <h3>Nom de l'allié</h3>
+                        <p class="relationship-type">Allié proche</p>
+                        <p>Description de la relation entre June et cet allié...</p>
+                    </div>
+                </div>
+                
+                <div class="relationship-card">
+                    <div class="relationship-image" style="background-image: url('images/ally2.jpg');"></div>
+                    <div class="relationship-info">
+                        <h3>Nom de l'allié</h3>
+                        <p class="relationship-type">Partenaire de guilde</p>
+                        <p>Description de la relation entre June et cet allié...</p>
+                    </div>
+                </div>
+                
+                <div class="relationship-card">
+                    <div class="relationship-image" style="background-image: url('images/ally3.jpg');"></div>
+                    <div class="relationship-info">
+                        <h3>Nom de l'allié</h3>
+                        <p class="relationship-type">Mentor</p>
+                        <p>Description de la relation entre June et cet allié...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>NightOfKarma - Personnage RP Bofuri</p>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="personnage.html">Personnage</a>
+                    <a href="monde.html">Monde</a>
+                    <a href="statistiques.html">Statistiques</a>
+                    <a href="galerie.html">Galerie</a>
+                </div>
+                <p class="copyright">&copy; 2025 Bofuri RP - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

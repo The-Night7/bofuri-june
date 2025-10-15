@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - NightOfKarma | Bofuri RP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">Night<span>OfKarma</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="personnage.html">Personnage</a></li>
+                        <li><a href="monde.html">Monde</a></li>
+                        <li><a href="statistiques.html">Statistiques</a></li>
+                        <li><a href="galerie.html" class="active">Galerie</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner gallery-banner">
+        <div class="banner-content">
+            <h1>Galerie</h1>
+            <p>Images et illustrations de June et du monde de Bofuri</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="character">Personnage</button>
+                <button class="filter-btn" data-filter="world">Monde</button>
+                <button class="filter-btn" data-filter="items">Objets créés</button>
+                <button class="filter-btn" data-filter="adventures">Aventures</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="gallery-grid fade-in">
+                <!-- Placeholders pour les images -->
+                <!-- Ces divs seront remplacés par de vraies images -->
+                
+                <div class="gallery-item" data-category="character">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-user"></i>
+                        <p>June - Monde Réel</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>June dans le monde réel</h3>
+                            <p>June Zan, 19 ans, dans sa vie quotidienne</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="character">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-gamepad"></i>
+                        <p>NightOfKarma - New World</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>NightOfKarma</h3>
+                            <p>June dans New World, portant son kimono bleu d'artisan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="world">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-home"></i>
+                        <p>Guilde des Artisans</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Quartier général de la Guilde des Artisans</h3>
+                            <p>Le lieu où June perfectionne ses compétences</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="items">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-hammer"></i>
+                        <p>Création d'un objet rare</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Processus de création</h3>
+                            <p>June en plein travail sur un objet légendaire</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="items">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-magic"></i>
+                        <p>Objet enchanté</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Amulette de Protection</h3>
+                            <p>Un des objets uniques créés par NightOfKarma</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="adventures">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-dragon"></i>
+                        <p>Combat contre un boss</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Affrontement épique</h3>
+                            <p>June et ses alliés face à un boss de donjon</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="world">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-mountain"></i>
+                        <p>Montagnes de Cristal</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Les Montagnes de Cristal</h3>
+                            <p>Source de matériaux rares pour l'artisanat</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="adventures">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>Équipe d'aventuriers</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Les compagnons de June</h3>
+                            <p>L'équipe avec laquelle NightOfKarma part à l'aventure</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="character">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-user-ninja"></i>
+                        <p>June en action</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>NightOfKarma en combat</h3>
+                            <p>June utilisant ses objets artisanaux au combat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Partagez vos images</h2>
+            
+            <div class="upload-container fade-in">
+                <p>Vous avez des illustrations de June ou du monde de Bofuri ? Partagez-les avec la communauté !</p>
+                
+                <div class="upload-form">
+                    <div class="form-group">
+                        <label for="image-title">Titre de l'image</label>
+                        <input type="text" id="image-title" placeholder="Entrez un titre pour votre image">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="image-category">Catégorie</label>
+                        <select id="image-category">
+                            <option value="character">Personnage</option>
+                            <option value="world">Monde</option>
+                            <option value="items">Objets créés</option>
+                            <option value="adventures">Aventures</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="image-description">Description</label>
+                        <textarea id="image-description" placeholder="Décrivez votre image"></textarea>
+                    </div>
+                    
+                    <div class="form-group file-upload">
+                        <label for="image-file">Sélectionner une image</label>
+                        <input type="file" id="image-file" accept="image/*">
+                        <div class="file-preview">
+                            <i class="fas fa-upload"></i>
+                            <p>Aucun fichier sélectionné</p>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn upload-btn">Partager</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>NightOfKarma - Personnage RP Bofuri</p>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="personnage.html">Personnage</a>
+                    <a href="monde.html">Monde</a>
+                    <a href="statistiques.html">Statistiques</a>
+                    <a href="galerie.html">Galerie</a>
+                </div>
+                <p class="copyright">&copy; 2025 Bofuri RP - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div id="modal-image-content"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Script spécifique à la galerie
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filtrage de la galerie
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Mise à jour des boutons actifs
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Prévisualisation du fichier uploadé
+            const fileInput = document.getElementById('image-file');
+            const filePreview = document.querySelector('.file-preview');
+            
+            if (fileInput && filePreview) {
+                fileInput.addEventListener('change', function() {
+                    if (this.files && this.files[0]) {
+                        const reader = new FileReader();
+                        
+                        reader.onload = function(e) {
+                            filePreview.innerHTML = `<img src="${e.target.result}" alt="Aperçu">`;
+                        };
+                        
+                        reader.readAsDataURL(this.files[0]);
+                    } else {
+                        filePreview.innerHTML = `
+                            <i class="fas fa-upload"></i>
+                            <p>Aucun fichier sélectionné</p>
+                        `;
+                    }
+                });
+            }
+            
+            // Modal pour les images de la galerie
+            const galleryImages = document.querySelectorAll('.gallery-item');
+            const imageModal = document.getElementById('image-modal');
+            const modalImageContent = document.getElementById('modal-image-content');
+            const closeImageModal = document.querySelector('#image-modal .close-modal');
+            
+            if (galleryImages && imageModal && modalImageContent && closeImageModal) {
+                galleryImages.forEach(image => {
+                    image.addEventListener('click', function() {
+                        const title = this.querySelector('.gallery-info h3').textContent;
+                        const description = this.querySelector('.gallery-info p').textContent;
+                        const imageSrc = this.querySelector('.gallery-placeholder').innerHTML; // À remplacer par l'URL de l'image réelle
+                        
+                        modalImageContent.innerHTML = `
+                            <h3>${title}</h3>
+                            <div class="modal-image-placeholder">${imageSrc}</div>
+                            <p>${description}</p>
+                        `;
+                        
+                        imageModal.classList.add('active');
+                    });
+                });
+                
+                closeImageModal.addEventListener('click', function() {
+                    imageModal.classList.remove('active');
+                });
+                
+                window.addEventListener('click', function(e) {
+                    if (e.target === imageModal) {
+                        imageModal.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
