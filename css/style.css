@@ -1371,3 +1371,371 @@ footer {
         padding: 15px;
     }
 }
+
+/* Styles spécifiques à la page des compétences */
+.skills-container {
+    background-color: #0f0f1a;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skills-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.skills-tab {
+    padding: 10px 20px;
+    background-color: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills-tab.active {
+    background-color: #4a2986;
+    color: white;
+    border-color: #6a3cba;
+}
+
+.skills-tab:hover {
+    background-color: #2a2a4e;
+}
+
+.skills-content {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.skills-content.active {
+    display: block;
+}
+
+.skills-markdown {
+    color: #e0e0e0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.skills-markdown h1 {
+    color: #8e44ad;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.skills-markdown h2 {
+    color: #9b59b6;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.skills-markdown h3 {
+    color: #aa7ecc;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.skills-markdown h4 {
+    color: #bb99dd;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.skills-markdown p {
+    margin-bottom: 15px;
+}
+
+.skills-markdown ul, .skills-markdown ol {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.skills-markdown li {
+    margin-bottom: 5px;
+}
+
+.skills-markdown code {
+    background-color: #1e1e30;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.skills-markdown pre {
+    background-color: #1e1e30;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+.skills-markdown table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.skills-markdown th, .skills-markdown td {
+    border: 1px solid #333;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.skills-markdown th {
+    background-color: #1a1a2e;
+}
+
+.skills-markdown tr:nth-child(even) {
+    background-color: #111122;
+}
+
+.skills-markdown blockquote {
+    border-left: 3px solid #6a3cba;
+    padding-left: 15px;
+    color: #bbb;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.skills-markdown hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+/* Ajout de styles pour les emoji */
+.skills-markdown em {
+    font-style: normal;
+    color: #8e44ad;
+}
+
+/* Animation de fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+/* Styles pour le modal et les fichiers markdown */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.modal-box {
+    background-color: #111;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow: auto;
+    transition: transform 0.3s ease;
+    transform: scale(0.9);
+    color: #e0e0e0;
+}
+
+.modal.active .modal-box {
+    transform: scale(1);
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #fff;
+}
+
+/* Styles pour le modal des fichiers markdown */
+.skills-docs-modal-content {
+    width: 90%;
+    max-width: 1000px;
+    height: 80%;
+    max-height: 600px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.skills-docs-browser {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e;
+}
+
+.browser-header {
+    background: #2d2d4a;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.browser-actions {
+    display: flex;
+    margin-right: 15px;
+}
+
+.browser-action {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.browser-action.red { background-color: #ff5f56; }
+.browser-action.yellow { background-color: #ffbd2e; }
+.browser-action.green { background-color: #27c93f; }
+
+.browser-title {
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+.skills-docs-browser {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.browser-sidebar {
+    width: 250px;
+    background-color: #1a1a2e;
+    border-right: 1px solid #333;
+    overflow-y: auto;
+}
+
+.browser-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #0f0f1a;
+    color: #e0e0e0;
+}
+
+.file-list {
+    padding: 10px;
+}
+
+.file-item {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background-color 0.2s;
+    color: #ccc;
+}
+
+.file-item:hover {
+    background-color: #2a2a4e;
+}
+
+.file-item.selected {
+    background-color: #4a2986;
+    color: #fff;
+}
+
+.file-item i {
+    margin-right: 8px;
+    color: #6a3cba;
+}
+
+.loading, .error, .select-prompt {
+    padding: 20px;
+    text-align: center;
+    color: #888;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+/* Styles pour le contenu markdown rendu dans la fenêtre cachée */
+.browser-content h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #9b59b6;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+}
+
+.browser-content h2 {
+    font-size: 20px;
+    margin: 16px 0 12px;
+    color: #aa7ecc;
+}
+
+.browser-content p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.browser-content ul, .browser-content ol {
+    padding-left: 20px;
+    margin-bottom: 16px;
+    color: #e0e0e0;
+}
+
+.browser-content li {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+    .skills-docs-browser {
+        flex-direction: column;
+    }
+
+    .browser-sidebar {
+        width: 100%;
+        max-height: 150px;
+    }
+}
