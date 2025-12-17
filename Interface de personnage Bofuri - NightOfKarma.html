@@ -341,7 +341,7 @@
             font-weight: 600;
         }
 
-        .hp-mp-bars {
+        .hp-mp-exp-bars {
             display: grid;
             gap: 10px;
             margin-bottom: 15px;
@@ -392,6 +392,11 @@
         .mp-bar {
             background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
             box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+        }
+
+        .exp-bar {
+            background: linear-gradient(90deg, #ffe671 0%, #FFD700 100%);
+            box-shadow: 0 0 10px rgba(243, 149, 41, 0.5);
         }
 
         .inventory {
@@ -832,14 +837,14 @@
     <div class="main-content">
         <div class="panel">
             <div class="panel-title">⚔️ Équipement</div>
-            <div class="hp-mp-bars">
+            <div class="hp-mp-exp-bars">
                 <div class="bar-container">
                     <div class="bar-label">
                         <span style="color: #ef4444;">❤️ PV</span>
-                        <span style="color: #ef4444;">168 / 168</span>
+                        <span style="color: #ef4444;">122 / 168</span>
                     </div>
                     <div class="bar">
-                        <div class="bar-fill hp-bar" style="width: 100%;">100%</div>
+                        <div class="bar-fill hp-bar" style="width: 73%;">73%</div>
                     </div>
                 </div>
                 <div class="bar-container">
@@ -849,6 +854,14 @@
                     </div>
                     <div class="bar">
                         <div class="bar-fill mp-bar" style="width: 100%;">100%</div>
+                    </div>
+                </div>
+                <div class="bar-container">
+                    <div class="bar-label">
+                        <span style="color: #FFD700;">✦ EXP</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill exp-bar" style="width: 0%;">0%</div>
                     </div>
                 </div>
             </div>
@@ -1427,6 +1440,12 @@
                 <div class="skill-name">🧘 Méditation</div>
                 <div class="skill-desc">Récupère 1% PV/tour pendant 5 tours (inclut attaque/défense). Pas d'attaque. Pas de coût PM. Cooldown: 10 tours.</div>
                 <span class="skill-type active">ACTIF - RÉGÉNÉRATION</span>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-name">🍖 Goinfre</div>
+                <div class="skill-desc">Mange un ennemi pour l'éliminer instantanément. Ne fonctionne pas sur les boss ou ennemis puissants. Peut être assigné à une arme ou un bouclier. 10 utilisations avant cooldown (1 combat/event).</div>
+                <span class="skill-type active">ACTIF - ONESHOT</span>
             </div>
         </div>
     </div>
