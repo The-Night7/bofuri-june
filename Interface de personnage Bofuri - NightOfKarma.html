@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>NightOfKarma - Profil de personnage</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
@@ -265,8 +265,6 @@
             padding: 15px;
             position: absolute;
             z-index: 20;
-            left: 105%;
-            top: 0;
             opacity: 0;
             transition: opacity 0.3s;
             border: 3px solid #6366f1;
@@ -274,6 +272,33 @@
             font-size: 14px;
             font-weight: normal;
             pointer-events: none;
+            /* Position par défaut à droite */
+            left: 105%;
+            top: 0;
+        }
+
+        /* Media query pour les écrans de taille moyenne et petite */
+        @media (max-width: 1200px) {
+            .stat-row .tooltip {
+                /* Position au-dessus plutôt qu'à droite */
+                left: auto;
+                right: 0;
+                top: auto;
+                bottom: 105%;
+                width: 250px;
+            }
+        }
+
+        /* Pour les écrans très petits, réduire davantage la taille */
+        @media (max-width: 768px) {
+            .stat-row .tooltip {
+                width: 200px;
+                font-size: 12px;
+            }
+
+            .tooltip-title {
+                font-size: 14px;
+            }
         }
 
         .stat-row:hover .tooltip {
