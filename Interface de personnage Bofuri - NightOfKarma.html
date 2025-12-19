@@ -913,15 +913,28 @@
                     </div>
                 </div>
 
-                <div class="equipment-slot equipped">
+                <div class="equipment-slot">
                     <div class="equipment-header">
                         <div class="equipment-icon">🪽</div>
                         <div class="equipment-name">Ailes de la reine des abeilles</div>
-                        <span class="equipped-badge">✅ ÉQUIPÉ</span>
                     </div>
                     <div class="equipment-desc">Équipement de dos majestueux</div>
                     <div class="equipment-stats">+30 PM, +30 INT, +30 HP, +30 DEX</div>
                 </div>
+
+                <div class="equipment-slot equipped">
+                    <div class="equipment-header">
+                        <div class="equipment-icon">🦎</div>
+                        <div class="equipment-name">Cape en peau d'hydre</div>
+                        <span class="equipped-badge">✅ ÉQUIPÉ</span>
+                    </div>
+                    <div class="equipment-desc">Cape robuste confectionnée à partir de la peau d'une hydre légendaire</div>
+                    <div class="equipment-stats">+40 DEX, +10 AGI, +40 VIT, +30 HP, +30 MP</div>
+                    <div class="equipment-skills">
+                        <div class="skill-item">• Résistance au poison: Réduit les dégâts de poison de 25%</div>
+                    </div>
+                </div>
+
 
                 <div class="equipment-slot equipped">
                     <div class="equipment-header">
@@ -1507,6 +1520,31 @@
                 <span class="skill-type active">ACTIF - BUFF</span>
             </div>
 
+            <div class="skill-card">
+                <div class="skill-name">☠️ Souffle mortel</div>
+                <div class="skill-desc">Crée un nuage de poison dans l'air autour de soi pendant quelques secondes. Peut être appliqué sur un objet pour le rendre empoisonné.</div>
+                <span class="skill-type active">ACTIF - POISON</span>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-name">🐉 Hydra Eater</div>
+                <div class="skill-desc">Invoque des Hydres empoisonnées qui infligent des dégâts et empoisonnent les cibles. Confère l'immunité au poison et à la paralysie. Rend disponibles toutes les magies de poison. Peut être appliqué à l'eau. Coût PM variable entre 15 et 30 selon l'invocation.</div>
+                <span class="skill-type active">ACTIF - INVOCATION</span>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-name">🌧️ Pluie de poison</div>
+                <div class="skill-desc">Crée une pluie de poison qui tombe sur les adversaires, les empoisonnant progressivement.</div>
+                <span class="skill-type active">ACTIF - ZONE</span>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-name">💊 Capsule empoisonnée</div>
+                <div class="skill-desc">Enferme une personne dans une capsule remplie de poison. La libération est possible. Si la cible reste enfermée, elle subit le statut "poison" temporairement. La capsule peut être brisée par une attaque de l'extérieur ou de l'intérieur. Coût PM: 10.</div>
+                <span class="skill-type active">ACTIF - CONTRÔLE</span>
+            </div>
+
+
         </div>
     </div>
 
@@ -1554,7 +1592,8 @@
             </div>
             <div class="inventory-slot filled" title="Potion de soin mineure">
                 <span>🧪</span>
-                <div class="item-count">15</div>
+                <div class="item-name">Soin</div>
+                <div class="item-count">10</div>
             </div>
             <div class="inventory-slot filled" title="Potion de mana mineure">
                 <span>🧪</span>
